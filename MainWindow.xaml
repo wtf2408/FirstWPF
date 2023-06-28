@@ -1,0 +1,57 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:FirstWPF"
+
+        xmlns:av="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Name="window" mc:Ignorable="av" x:Class="FirstWPF.MainWindow"
+
+        Title="Window" MinHeight="300" MinWidth="600"
+        MaxHeight="700"
+        MaxWidth="1000"
+        WindowStyle="ThreeDBorderWindow">
+    <Grid Background="LightSlateGray">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="48*"/>
+            <RowDefinition Height="23*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="401*"/>
+            <ColumnDefinition Width="399*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <TextBox x:Name="inputText"
+                 Margin="10,0,0,0"    
+                 Width="268"
+                 Height="74"
+                 Grid.Column="0"
+                 Grid.Row="1"
+                 />
+        <ListBox Grid.Column="1"
+                 x:Name="listBox"
+                 Margin="40,10,40,90"
+                 />
+        <Button Grid.Column="1"
+                
+                Content="Task1" 
+                Grid.Row="1" 
+                Height="36" 
+                Width="94" 
+                Click="Button1_Click" HorizontalAlignment="Left"/>
+        <Label Content="Label"
+               x:Name ="label"
+               Grid.Row="0"
+               Grid.Column="0"/>
+        <Button Grid.Column="1"
+                
+                Content="Task2" 
+                Grid.Row="1" 
+                Height="36" 
+                Width="94" 
+                Click="Button2_Click" HorizontalAlignment="Right"/>
+
+    </Grid>
+
+</Window>
+    
